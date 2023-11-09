@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="css/w3.css">
 	</head>
 
+<?php include 'phpStyles.php' ?>
+	
 	<body>
 		<!--- fungsi untuk besarkan saiz tulisan --->
 		<div class="textFormat w3-header w3-brown w3-border-bottom">
