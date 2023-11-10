@@ -20,9 +20,17 @@
                                 </div>
 
                                 <!-- Place image here -->
+				<div class="w3-center w3-animate-zoom">
+					<img width="1540" height="663" src="img\backgroundSK2.jpg" style="display: inline; margin: 0 1px;">			
+				</div>
 
-                        </div>
-                        <footer id="footer">TEAM ROVI</footer>
+                	</div>
+                        <footer id="footer">
+				<div class= "w3-center w3-bar w3-black w3-animate-bottom">
+				<!-- CREDITS -->
+				<p class="b"> HAK MILIK TEAM ROVI @ 2023 </p>
+				</div>
+			</footer>
                 </div>
         </body>
 </html>
