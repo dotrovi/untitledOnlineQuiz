@@ -64,7 +64,7 @@ if(isset($_POST['daftar'])) {
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>KUIZZER</title>
+		<title>QUIZ</title>
   
 <!-- file css, font, background-->
 		<link rel="stylesheet" href="css/w3.css">
