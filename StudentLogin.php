@@ -22,7 +22,7 @@
 					                        <input class="w3-input w3-center" type="text" name="username" placeholder="USERNAME [MURID]">
 					                        <input class="w3-input w3-center" type="password" name="pwd" placeholder="KATA LALUAN">
 					                        <br>
-					                        <button class="w3-btn w3-green" type="submit" name="login">LOG MASUK</button> | <a href="daftarmurid.php" class="w3-btn w3-blue" type="submit" name="signup">DAFTAR MASUK</a>
+					                        <button class="w3-btn w3-green" type="submit" name="login">LOG MASUK</button> | <a href="StudentRegister.php" class="w3-btn w3-blue" type="submit" name="signup">DAFTAR MASUK</a>
 					                        <br><br>
 				                        </form>
                                                     	<!-- TAMAT BORANG LOG MASUK -->
