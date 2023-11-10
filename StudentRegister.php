@@ -52,7 +52,7 @@ if(isset($_POST['daftar'])) {
 		if (mysqli_query($con, "INSERT INTO murid VALUES ('$nokp', '$username', '$nama', '$kelas', '$pwd')")) {
 			
 			// if they succeed
-			echo "<script>alert('Berjaya didaftarkan! Sila log masuk.');</script>";
+			echo "<script>alert('Register SUCCESSFUL! Please log in here.');</script>";
 		}
 	}
 }
