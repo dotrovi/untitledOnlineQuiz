@@ -6,6 +6,7 @@
                 <title>QUIZ</title>
                 <link rel="stylesheet" href="css/w3.css">
                 <link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="icon" href="img/5692030.png" type="image/x-icon">
         </head>
 
         <body>
