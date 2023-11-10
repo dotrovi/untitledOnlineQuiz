@@ -12,17 +12,17 @@
                 <div id="page-containter">
                         <div id="content-wrap">
                                 <div class="w3-container w3-center" style="width:50%; margin: 0px auto;">
-		                        <p class="w3-audiowide w3-jumbo w3-animate-opacity">KUIZ SAINS T2</p>
+		                        <p class="w3-audiowide w3-jumbo w3-animate-opacity">SCIENCE QUIZ T2</p>
 			                <div class="w3-border w3-brown">
 				                <div class="w3-container w3-margin w3-light-green w3-animate-opacity">
-				                        <p class="b"> UJI PENGETAHUAN ANDA </p>
+				                        <p class="b"> TEST YOUR KNOWLEDGE </p>
 	
                                                         <!-- BORANG LOG MASUK -->
 				                        <form action="LoginProcess.php?q=1" method="post" class="textFormat">
 					                        <input class="w3-input w3-center" type="text" name="username" placeholder="USERNAME [MURID]">
-					                        <input class="w3-input w3-center" type="password" name="pwd" placeholder="KATA LALUAN">
+					                        <input class="w3-input w3-center" type="password" name="pwd" placeholder="PASSWORD">
 					                        <br>
-					                        <button class="w3-btn w3-green" type="submit" name="login">LOG MASUK</button> | <a href="StudentRegister.php" class="w3-btn w3-blue" type="submit" name="signup">DAFTAR MASUK</a>
+					                        <button class="w3-btn w3-green" type="submit" name="login">LOG IN</button> | <a href="StudentRegister.php" class="w3-btn w3-blue" type="submit" name="signup">SIGN IN</a>
 					                        <br><br>
 				                        </form>
                                                     	<!-- TAMAT BORANG LOG MASUK -->
