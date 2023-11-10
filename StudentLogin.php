@@ -37,4 +37,9 @@
                         <footer id="footer">TEAM ROVI</footer>
                 </div>
         </body>
+<style>
+.b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
 </html>
