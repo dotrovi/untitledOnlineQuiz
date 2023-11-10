@@ -10,19 +10,19 @@ session_start();
 
 //sekatan pengguna - jika pengguna sudah mendaftar masuk
 if(!isset($_SESSION['nokpmurid'])) {
-	//ke laman logmasukmurid.php untuk log masuk
-	header('location:logmasukmurid.php');
+	//ke laman StudentLogin.php untuk log masuk
+	header('location:StudentLogin.php');
 }
 ?>
 
-<!-- sambungan pada header.php -->
-<?php include 'header.php'; ?>
+<!-- sambungan pada StudentHeader.php -->
+<?php include 'StudentHeader.php'; ?>
 
 <!-- <body> / isi kandungan -->
 <!-- Proses memaparkan senarai guru  -->
 	<br>
 	<center class="w3-animate-opacity">
-		<label class="w3-text-cyan"><h3><b>SENARAI GURU</b></h3></label>
+		<label class="w3-text-cyan"><h3><b>TEACHER LIST</b></h3></label>
 	</center>
 	<br>
 	
@@ -30,7 +30,7 @@ if(!isset($_SESSION['nokpmurid'])) {
 	<table class="b w3-brown w3-table w3-border w3-centered w3-animate-opacity" border="1" style="width:40%; margin: auto;">
 		<tr>
 			<th>BIL</th>
-			<th>NAMA</th>
+			<th>NAME</th>
 		</tr>
 		<?php
 		//mendapatkan data dari jadual guru
@@ -38,7 +38,7 @@ if(!isset($_SESSION['nokpmurid'])) {
 		
 		//jika tidak terdapat data
 		if (mysqli_num_rows($sql) == 0) {
-			echo '<tr><td colspan="5" class="w3-pale-green">Tiada guru dalam pangkalan data!</td></tr>';
+			echo '<tr><td colspan="5" class="w3-pale-green">No teacher in database!</td></tr>';
 		} else {
 			$no = 1;
 			while ($row = mysqli_fetch_array($sql)) {
@@ -57,7 +57,7 @@ if(!isset($_SESSION['nokpmurid'])) {
 	<br>
 	<br>
 	<center class="w3-animate-opacity">
-		<label class="w3-text-cyan"><h3><b>SENARAI MURID</b></h3></label>
+		<label class="w3-text-cyan"><h3><b>STUDENT LIST</b></h3></label>
 	</center>
 	<br>
 	
@@ -65,8 +65,8 @@ if(!isset($_SESSION['nokpmurid'])) {
 	<table class="b w3-brown w3-table w3-border w3-centered w3-animate-opacity" border="1" style="width:70%; margin: auto;">
 		<tr>
 			<th>BIL</th>
-			<th>NAMA</th>
-			<th>KELAS</th>
+			<th>NAME</th>
+			<th>CLASS</th>
 		</tr>
 		<?php
 		//mendapatkan data dari jadual murid
@@ -74,7 +74,7 @@ if(!isset($_SESSION['nokpmurid'])) {
 		
 		//jika tidak terdapat data
 		if (mysqli_num_rows($sql) == 0) {
-			echo '<tr><td colspan="5" class="w3-pale-green">Tiada murid dalam pangkalan data!</td></tr>';
+			echo '<tr><td colspan="5" class="w3-pale-green">No student in database!</td></tr>';
 		} else {
 			$no = 1;
 			while ($row = mysqli_fetch_array($sql)) {
