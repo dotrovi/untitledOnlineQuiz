@@ -1,6 +1,6 @@
 <!-- SISTEM APLIKASI KUIZ SAINS -->
 <!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : AddQuestion.php -->
+<!-- FILE : AddQuestionProcess.php -->
 
 <?php
 // fail sambungan ke pangkalan data
