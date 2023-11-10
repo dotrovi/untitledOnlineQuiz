@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
 <!-- membuat css untuk menggunakan font google -->
-		<?php include 'RegiserStyles.php' ?>
+		<?php include 'RegisterStyles.php' ?>
 	</head>
  
 	<body>
