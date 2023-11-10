@@ -22,7 +22,7 @@
 					<p> TEACHER PANEL </p>
 	 
 <!------ BORANG LOG MASUK ------>
-					<form action="proseslogin.php?q=2" method="post">
+					<form action="LoginProcess.php?q=2" method="post">
 					<input class="w3-input w3-center" type="text" name="username" placeholder="USERNAME [GURU]">
 					<input class="w3-input w3-center" type="password" name="pwd" placeholder="PASSWORD">
 					<br>
