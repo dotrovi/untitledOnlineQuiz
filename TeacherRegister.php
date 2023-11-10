@@ -1,6 +1,6 @@
 <!-- SISTEM APLIKASI KUIZ SAINS -->
 <!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : daftarguru.php -->
+<!-- FILE : TeacherRegister.php -->
 
 <?php
 //fail sambungan ke pangkalan data
