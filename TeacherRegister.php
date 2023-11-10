@@ -1,53 +1,46 @@
-<!-- SISTEM APLIKASI KUIZ SAINS -->
-<!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : TeacherRegister.php -->
-
 <?php
-//fail sambungan ke pangkalan data
 include 'connection.php';
-
-//tetapkan error = false
 $error = false;
 
 if(isset($_POST['daftar'])) {
-	//dapatkan data drpd input dan tetapkan pemboleh ubah
+	// Data classified as variables
 	$namaguru = $_POST['namaguru'];
 	$username = $_POST['username'];
 	$pwd = $_POST['pwd'];
 	
-	//jika masukkan nama penuh mempunyai nombor atau simbol
+	// if name has numbers or symbols
 	if (!preg_match("/^[a-zA-Z ]+$/",$namaguru)) {
 		$error = true;
 		$namaguru_error = "MUST CONTAIN LETTER AND SPACE";
 	}
 	
-	//jika masukkan nama pengguna mempunyai nombor atau simbol
+	// if username has numbers of symbols
 	if (!preg_match("/^[a-zA-Z]+$/",$username)) {
 		$error = true;
 		$username_error = "MUST CONTAIN LETTER ONLY";
 	}
 	
-	//jika masukkan kata laluan kurang drpd 6 aksara
-	if (strlen($pwd) <6) {
+	// if password less than 6 letters
+	if (strlen($pwd) < 6) {
 		$error = true;
-		$pwd_error = "Kata laluan minimum 6 aksara";
+		$pwd_error = "Password is minimum 6 letters";
 	}
 	
-	//jika masukkan kata laluan lebih drpd 12 aksara
+	// if password more than 12 letters
 	if (strlen($pwd) > 12) {
 		$error = true;
-		$pwd_error = "PASSWORD CONTAINS 12 CHARACTERS AT MINIMUM";
+		$pwd_error = "Password is maximum 12 letters";
 	}
 	
-	// tambah rekod baru ke jadual guru
+	// new data to table guru (SUBJECT TO CHANGE)
 	if (!$error) {
 		if (mysqli_query($con, "INSERT INTO guru VALUES ('', '$namaguru', '$username', '$pwd')")) {
 			
-			//paparan jika bejaya ditambah ke jadual guru
+			// if successful
 			echo "<script>alert('Register SUCCESSFUL! Please log in here.');</script>";
 		} else {
 			
-			//paparan jika tidak berjaya ditambah ke jadual guru
+			// if unsuccessful
 			echo "<script>alert('ERROR! Please register again.');</script>";
 		}
 	}
@@ -65,26 +58,7 @@ if(isset($_POST['daftar'])) {
 <!----- sambungan fail css & font -->
 		<link rel="stylesheet" href="css/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-		<style>
-		.w3-audiowide {
-			font-family: 'Audiowide', sans-serif;
-		}
-		</style>
-		<!-- background -->	
-		<style>
-		body {
-			background-image:url('backgroundmenuSK.jpg');
-			background-repeat: no repeat;
-			background-attachment: fixed;
-			background-size: 100% 100%;
-		}
-		</style>
-		<!-- background default color -->
-		<style>
-		body {
-			background-color: #AAF35C;
-		}
-		</style>
+		<?php include 'RegisterStyles.php' ?>
 	</head>
 	
 	<body>
@@ -109,7 +83,7 @@ if(isset($_POST['daftar'])) {
 				<button class="w3-btn w3-blue" type="submit" name="daftar">SIGN IN</button>
 	  
 				<hr>
-				<h6><a class="w3-btn w3-green" href="logmasukguru.php">LOG IN HERE</a></h6>
+				<h6><a class="w3-btn w3-green" href="TeacherLogin.php">LOG IN HERE</a></h6>
 			</form>
 		</div>
 	</div>
@@ -119,9 +93,4 @@ if(isset($_POST['daftar'])) {
 			<a href="index.php" class="w3-btn w3-round-xxlarge w3-pale-green" type="submit" name="menu">MAIN SITE</a>
 		</div>
 	</body>
-<style>
-.b {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
 </html>
