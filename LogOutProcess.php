@@ -1,22 +1,22 @@
 <!-- SISTEM APLIKASI KUIZ SAINS -->
 <!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : proseslogkeluar.php -->
+<!-- FILE : LogOutProcess.php -->
 
 <?php
 //fail sambungan ke pangkalan data
-include 'sambungdb.php';
+include 'connection.php';
 //mulakan session
 session_start();
 
 //sekatan pengguna - jika pengguna sudah mendaftar masuk
 if(!isset($_SESSION['nokpmurid'])) {
 	//ke laman logmasukmurid.php untuk log masuk
-	header('location:logmasukmurid.php');
+	header('location:StudentLogin.php');
 }
 ?>
 
 <!-- sambungan pada header.php -->
-<?php include 'header.php'; ?>
+<?php include 'StudentHeader.php'; ?>
 
 <!-- <body> / isi kandungan -->
 <!-- pilihan untuk log keluar atau tidak-->
@@ -24,8 +24,8 @@ if(!isset($_SESSION['nokpmurid'])) {
 <br>
 <br>
 <div class="b w3-card-4 w3-center w3-pale-green" style="width:25%; margin: 0px auto;">
-	<div class="w3-container w3-brown b"><h3><b>Anda ingin log keluar?</b></h3></div>
-	<a href="logkeluar.php" class="w3-mobile"><button class="w3-button w3-bar-item w3-button w3-hover-red">Ya</button></a>|<a href="utama.php" class="w3-mobile"><button class="w3-button w3-bar-item w3-button w3-hover-green">Tidak</button></a>
+	<div class="w3-container w3-brown b"><h3><b>Do you want to log out?</b></h3></div>
+	<a href="logkeluar.php" class="w3-mobile"><button class="w3-button w3-bar-item w3-button w3-hover-red">Yes</button></a>|<a href="utama.php" class="w3-mobile"><button class="w3-button w3-bar-item w3-button w3-hover-green">No</button></a>
 </div>
 
 <!-- proses tamat -->
