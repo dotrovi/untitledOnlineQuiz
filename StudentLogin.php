@@ -31,7 +31,7 @@
 		                </div>
 		                <br><br><br><br>
 		                <div class="b w3-center">
-			                <a href="index.php" class="w3-btn w3-round-xxlarge w3-pale-green w3-animate-zoom" type="submit" name="menu">LAMAN UTAMA</a>
+			                <a href="index.php" class="w3-btn w3-round-xxlarge w3-pale-green w3-animate-zoom" type="submit" name="menu">MAIN SITE</a>
 		                </div>
                         </div>
                         <footer id="footer">TEAM ROVI</footer>
