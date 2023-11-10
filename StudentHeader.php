@@ -32,7 +32,7 @@
 						<a href="utama.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">UTAMA</a>
 						<a href="pencapaian.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">LIHAT AKTIVITI</a>
 						<a href="senaraimuridguru.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">MURID & GURU</a>
-						<a href="proseslogkeluar.php" class="b w3-bar-item w3-hover-red w3-button">LOG KELUAR</a>
+						<a href="Logout.php" class="b w3-bar-item w3-hover-red w3-button">LOG KELUAR</a>
 					</div>
 			</div>
 
