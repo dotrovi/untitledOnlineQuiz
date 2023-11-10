@@ -12,7 +12,7 @@
                 <div id="page-containter">
                         <div id="content-wrap">
                                 <div class="w3-container w3-center" style="width:50%; margin: 0px auto;">
-		                        <p>KUIZ SAINS T2</p>
+		                        <p class="w3-audiowide w3-jumbo w3-animate-opacity">KUIZ SAINS T2</p>
 			                <div class="w3-border w3-brown">
 				                <div class="w3-container w3-margin w3-light-green w3-animate-opacity">
 				                        <p class="b"> UJI PENGETAHUAN ANDA </p>
