@@ -5,6 +5,11 @@
         font-family: Arial, Helvetica, sans-serif;
 }
 
+.textShadow
+{
+	text-shadow: 1px 1px #C5E2EE;
+}
+	
 /* dropdown button */
 .dropbtn {
   background-color: #CDAF9A;
