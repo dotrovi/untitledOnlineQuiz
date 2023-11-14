@@ -44,7 +44,7 @@ if ($_GET['q'] == 2) {
   // idguru as session token
   $_SESSION['idguru'] = $user['idguru'];
   // to main page for teachers
-  header("Location: senarai.php?q=1");
+  header("Location:List.php?q=1");
  } 
   else 
   {
