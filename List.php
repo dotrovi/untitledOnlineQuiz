@@ -1,23 +1,21 @@
-<html>
-  <?php
-  include 'connection.php';
-  ?>
+<?php
+include 'connection.php';
+session_start();
+  
+if(!isset($_SESSION['idguru']))
+{
+	header('location:TeacherLogin.php');
+	exit();
+}
+?>
+  
+<?php include 'phpStyles.php'; ?>
+<?php include 'TeacherHeader.php'; ?>
 
-  <?php
-  session_start();
-  
-  if(!isset($_SESSION['idguru']))
-  {
-    header('location:TeacherLogin.php');
-    exit();
-  }
-  
-  include 'phpStyles.php';
-  include 'Teacher.php';
-  
-  if($_GET['q'] == 1)
-  { 
-  ?>
+<?php
+if($_GET['q'] == 1)
+{ 
+?>
    <br>
 	  <center class="textShadow textFormat w3-animate-opacity">
 		  <label class="w3-text-blue"><h3><b>QUIZ TOPIC LIST</b></h3></label>
