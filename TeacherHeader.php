@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="textFormat w3-header w3-brown w3-border-bottom">
+	<div class="textFormat w3-header w3-brown w3-border-bottom">
 			<b>&nbsp; &nbsp; Font :</b>
 			<button class="w3-button w3-border-right" onclick="resizeText(-1)">A-</button>
 			<button class="w3-button w3-border-left" onclick="resizeText(1)">A+</button>
@@ -35,23 +35,26 @@
 				</div>
 			</div>
 			
-      <?php
-      // semak jika terdapat guru log masuk
-      if (isset($_SESSION['idguru'])) {
-        // mendapatkan rekod dari jadual guru
-        $idguru = $_SESSION['idguru'];
-        $query = mysqli_query($con, "SELECT * FROM guru WHERE idguru = '$idguru'");
-        $user = mysqli_fetch_array($query); 
-      ?>	
-      <!------- paparkan nama guru --->
-        <a class="w3-bar-item w3-button w3-brown w3-hover-brown w3-right">Welcome, <?php echo $user['namaguru'];?></a>
-      <?php
-      } else { 
-      ?>
-        <a href="logmasukguru.php" class="w3-bar-item w3-button w3-red w3-right">LOG MASUK</a>
-      <?php
-      }
-      ?>
-		</div>
+      			<?php
+      				// semak jika terdapat guru log masuk
+				if (isset($_SESSION['idguru'])) 
+				{
+	        			// mendapatkan rekod dari jadual guru
+        				$idguru = $_SESSION['idguru'];
+        				$query = mysqli_query($con, "SELECT * FROM guru WHERE idguru = '$idguru'");
+        				$user = mysqli_fetch_array($query); 
+      			?>	
+      					<!------- paparkan nama guru --->
+        				<a class="w3-bar-item w3-button w3-brown w3-hover-brown w3-right">Welcome, <?php echo $user['namaguru'];?></a>
+      					<?php
+      				}
+				else 
+				{ 
+      					?>
+		        		<a href="logmasukguru.php" class="w3-bar-item w3-button w3-red w3-right">LOG MASUK</a>
+      					<?php
+      				}
+      					?>
+	</div>
   </body>
 </html>
