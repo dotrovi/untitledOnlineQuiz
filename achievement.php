@@ -1,7 +1,3 @@
-<!-- SISTEM APLIKASI KUIZ SAINS -->
-<!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : achievement.php -->
-
 <?php
 //fail sambungan ke pangkalan data
 include 'connection.php';
@@ -12,6 +8,7 @@ session_start();
 if(!isset($_SESSION['nokpmurid'])) {
 	//ke laman logmasukmurid.php untuk log masuk
 	header('location:StudentLogin.php');
+	exit();
 }
 ?>
 
