@@ -25,7 +25,7 @@ if($_GET['q'] == 1)
 	{
 		// ke laman index.php
 		header("refresh:2;url=StudentLogin.php");
-		echo "<script>alert('Login Failed!' Returning to login page...)</script>";
+		echo "<script>alert('Login Failed! Returning to login page...')</script>";
 	}
 }
 
