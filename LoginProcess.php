@@ -23,10 +23,9 @@ if($_GET['q'] == 1)
 	} 
 	else 
 	{
-		echo "<script>alert('Login Failed!')</script>";
-		exit();
 		// ke laman index.php
-		header("location:StudentLogin.php");
+		header("refresh:5;url=StudentLogin.php");
+		echo "<script>alert('Login Failed!')</script>";
 	}
 }
 
@@ -52,10 +51,9 @@ if ($_GET['q'] == 2)
   	else 
   	{
   		// paparan jika gagal log masuk
-	  	echo "<script>alert('Login Failed!')</script>";
-		exit();
   		// ke laman index.php
-  		header("location:TeacherLogin.php");
+  		header("refresh:5;url=TeacherLogin.php");
+		echo "<script>alert('Login Failed!')</script>";
   	}
 }
 ?>
