@@ -12,6 +12,7 @@ session_start();
 if(!isset($_SESSION['nokpmurid'])) {
 	//ke laman logmasukmurid.php untuk log masuk
 	header('location:StudentLogin.php');
+	exit();
 }
 ?>
 
