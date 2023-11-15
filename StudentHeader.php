@@ -31,7 +31,7 @@
 					<div class="dropdown-content" style="right:0;">
 						<a href="main.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">UTAMA</a>
 						<a href="achievement.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">LIHAT AKTIVITI</a>
-						<a href="StudentTeacherList" class="b w3-bar-item w3-button w3-hover-green w3-border-right">MURID & GURU</a>
+						<a href="StudentTeacherList.php" class="b w3-bar-item w3-button w3-hover-green w3-border-right">MURID & GURU</a>
 						<a href="Logout.php" class="b w3-bar-item w3-hover-red w3-button">LOG KELUAR</a>
 					</div>
 			</div>
