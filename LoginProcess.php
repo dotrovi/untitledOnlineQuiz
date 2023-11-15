@@ -19,7 +19,6 @@ if($_GET['q'] == 1)
 		$_SESSION['nokpmurid'] = $user['nokpmurid'];
 		// to main page for students
 		header("Location:main.php");
-		exit();
 		
 	} 
 	else 
@@ -28,7 +27,6 @@ if($_GET['q'] == 1)
 		exit();
 		// ke laman index.php
 		header("location:StudentLogin.php");
-		exit();
 	}
 }
 
@@ -50,7 +48,6 @@ if ($_GET['q'] == 2)
   		$_SESSION['idguru'] = $user['idguru'];
   		// to main page for teachers
   		header("Location:List.php?q=1");
-		exit();
  	} 
   	else 
   	{
@@ -59,7 +56,6 @@ if ($_GET['q'] == 2)
 		exit();
   		// ke laman index.php
   		header("location:TeacherLogin.php");
-  		exit();
   	}
 }
 ?>
