@@ -1,6 +1,10 @@
 <html>
   <?php
   include 'connection.php';
+  exit(); 
+  ?>
+
+  <?php
   session_start();
   
   if(!isset($_SESSION['idguru']))
