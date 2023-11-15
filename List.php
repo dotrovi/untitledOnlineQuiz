@@ -1,7 +1,6 @@
 <html>
   <?php
   include 'connection.php';
-  exit(); 
   ?>
 
   <?php
