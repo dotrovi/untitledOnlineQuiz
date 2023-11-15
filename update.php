@@ -1,6 +1,3 @@
-<!-- SISTEM APLIKASI KUIZ SAINS -->
-<!-- DISEDIAKAN OLEH :- ivorbarriejaffery@smkmatunggong -->
-<!-- FILE : update.php -->
 <style>
 .a {
 	text-shadow: 1px 1px #ABABAB;
@@ -25,6 +22,7 @@ session_start();
 if(!isset($_SESSION['idguru'])) {
 	// ke laman logmasukguru.php untuk log masuk
 	header('location:TeacherLogin.php');	
+	exit();
 }
 ?>
 
