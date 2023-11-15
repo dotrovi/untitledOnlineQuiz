@@ -6,6 +6,7 @@
   if(!isset($_SESSION['idguru']))
   {
     header('location:TeacherLogin.php');
+    exit();
   }
   
   include 'phpStyles.php';
