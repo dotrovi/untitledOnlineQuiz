@@ -1,20 +1,5 @@
-<style>
-.a {
-	text-shadow: 1px 1px #C5E2EE;
-}
-.b {
-  font-family: Arial, Helvetica, sans-serif;
-}
-body{
-background-repeat: no repeat;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-color: #CCCCCC;}
-</style>
 <?php
-//fail sambungan ke pangkalan data
 include 'connection.php';
-//mulakan session
 session_start();
 
 //sekatan pengguna - jika pengguna sudah mendaftar masuk
@@ -27,6 +12,7 @@ if(!isset($_SESSION['idguru'])) {
 
 <!-- sambungan pada header.php -->
 <?php include 'TeacherHeader.php'; ?>
+<?php include 'phpStyles.php'; ?>
 
 <!-- <body> / isi kandungan -->
 <!-- Proses memaparkan senarai kuiz -->
@@ -39,13 +25,13 @@ if(!isset($_SESSION['idguru'])) {
 	$sql = mysqli_query($con, "SELECT * FROM skor INNER JOIN kuiz ON kuiz.idkuiz = skor.idkuiz WHERE skor.nokpmurid = '$nokp'");
 	?>
 	<br>
-	<center class="a b w3-animate-opacity">
+	<center class="textShadow textFormat textFormat w3-animate-opacity">
 	<label class="w3-text-blue"><h3><b>SCORE LIST</b></h3></label>
 	<label class="w3-text-black"><u><b><?php echo $nama ?></b></u></label>
 	</center>
 	<br>
 	<!-- table untuk senarai skor -->
-	<table class="b w3-table w3-centered w3-animate-opacity" border="1" style="width:70%; margin: auto;">
+	<table class="textFormat w3-table w3-centered w3-animate-opacity" border="1" style="width:70%; margin: auto;">
 		<tr class="w3-brown">
 			<th>QUIZ TOPIC</th>
 			<th>PERCENTAGE</th>
