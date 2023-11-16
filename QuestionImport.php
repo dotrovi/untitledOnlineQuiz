@@ -14,6 +14,7 @@ if(!isset($_SESSION['idguru'])) {
 
 <!-- sambungan pada header.php -->
 <?php include 'TeacherHeader.php'; ?>
+<?php include 'phpStyles.php'; ?>
 
 <!-- <body> / isi kandungan -->
 <!-- USER INTERFACE -->
@@ -22,7 +23,7 @@ if(!isset($_SESSION['idguru'])) {
 	
 	<!-- BORANG MENGIMPORT FAIL CSV -->
 	<div class="w3-container w3-brown b"><h3><b>IMPORT TOPIC & QUESTIONS</b></h3></div>
-	<form class="w3-panel" action="importsoalan.php" method="post" enctype="multipart/form-data">
+	<form class="w3-panel" action="QuestionImport.php" method="post" enctype="multipart/form-data">
 		<label class="w3-text-blue"><h5><b>CHOOSE CSV FILE</b></h5></label>
 		<input class="w3-input w3-white w3-border" type="file" name="fail">
 		<br>
@@ -56,18 +57,3 @@ if(isset($_POST['import'])) {
 	}
 }
 ?>
-<!-- PROSES TAMAT -->
-<style>
-.a {
-	text-shadow: 1px 1px #C5E2EE;
-}
-.b {
-  font-family: Arial, Helvetica, sans-serif;
-}
-body{
-background-repeat: no repeat;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-color: #CCCCCC;}
-</style>
-<!-- </body> tamat -->
